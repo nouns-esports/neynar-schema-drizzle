@@ -10,6 +10,7 @@ import {
 	smallint,
 } from "drizzle-orm/pg-core";
 
+// bytea is not yet natively supported by Drizzle
 const bytea = customType<{
 	data: Buffer;
 	default: false;
